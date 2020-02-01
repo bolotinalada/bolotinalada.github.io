@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hotel Cats</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/vars.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="site-navigation center">
+        <a href="index.html">
+            <img src="../../img/logo.png" alt="" width="63" height="52">
+        </a>
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a href="#" class="nav-link">Почему мы?</a>
+            </li class="nav-item">
+            <li class="nav-item">
+                <a href="catalog.html" class="nav-link">Номера</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Отзывы</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Как нас найти</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section class="catalog center">
+            <div class="catalog-top">
+                <h1 class="catalog-headline">Наши номера</h1>
+                <a href="#" type="submit" class="btn-sort"><i class="fas fa-long-arrow-alt-up"></i>По площади<i class="fas fa-chevron-down"></i></a>
+            </div>
+            <div class="catalog-rooms-block">
+                <form action="#" method="GET" class="filter-block">
+                    <fieldset class="filter-price">
+                        <legend>Цена за сутки,Р</legend>
+                        <div class="price-controls">
+                            <label class="min-price"><input name="min-price" type="text" value="от 100"></label>
+                            <label class="max-price"><input name="max-price" type="text" value="до 600"></label>
+                          </div>
+                    </fieldset>
+                    <fieldset class="filter-area">
+                        <legend>Площадь</legend>
+                        <ul>
+                            <li class="filter-option">
+                                <input class="filter-input filter-input-checkbox" type="checkbox" name="area-1" id="area-1">
+                                <label for="area-1">0,63 м2</label>
+                            </li>
+                            <li class="filter-option">
+                                <input class="filter-input filter-input-checkbox" type="checkbox" name="area-2" id="area-2">
+                                <label for="area-2">0,90 м2</label>
+                            </li>
+                            <li class="filter-option">
+                                <input class="filter-input filter-input-checkbox" type="checkbox" name="area-3" id="area-3">
+                                <label for="area-3">1,13 м2</label>
+                            </li>
+                            <li class="filter-option">
+                                <input class="filter-input filter-input-checkbox" type="checkbox" name="area-4" id="area-4">
+                                <label for="area-4">1,56 м2</label>
+                            </li>
+                            <li class="filter-option">
+                                <input class="filter-input filter-input-checkbox" type="checkbox" name="area-5" id="area-5" checked>
+                                <label for="area-5">2,56 м2</label>
+                            </li>
+                            <li class="filter-option">
+                                <input class="filter-input filter-input-checkbox" type="checkbox" name="area-6" id="area-6">
+                                <label for="area-6">2,88 м2</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset class="filter-content">
+                        <legend>Оснащение номера</legend>
+                        <ul>
+                            <li class="filter-option">
+                                <input class="filter-input filter-input-checkbox" type="checkbox" name="content-1" id="content-1" checked>
+                                <label for="content-1">Пустой номер</label>
+                            </li>
+                            <li class="filter-option">
+                                <input class="filter-input filter-input-checkbox" type="checkbox" name="content-1" id="content-2">
+                                <label for="content-2">Лежак</label>
+                            </li>
+                            <li class="filter-option">
+                                <input class="filter-input filter-input-checkbox" type="checkbox" name="content-1" id="content-3">
+                                <label for="content-3">Когтеточка</label>
+                            </li>
+                            <li class="filter-option">
+                                <input class="filter-input filter-input-checkbox" type="checkbox" name="content-1" id="content-4">
+                                <label for="content-4">Игровой-комплекс</label>
+                            </li>
+                            <li class="filter-option">
+                                <input class="filter-input filter-input-checkbox" type="checkbox" name="content-1" id="content-5">
+                                <label for="content-5">Домик</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <a href="" type="submit" class="btn-filter">Сбросить фильтр</a>
+                </form>
+                <div class="catalog-rooms rooms-1">
+                    <img src="img/pic5.png" alt="Эконом" width="270" height="182">
+                    <ul class="rooms-description-list">
+                        <li>
+                            <h3 class="catalog-rooms-headline">Эконом</h3>
+                        </li>
+                        <li class="rooms-description-item">
+                            <p>Размеры (ШхГхВ) - 90х70х180 см</p>
+                        </li>
+                        <li class="rooms-description-item">
+                            <p>Площадь - 0,63 м2</p>
+                        </li>
+                        <li class="rooms-description-item">
+                            <div class="pin-flex">
+                                <span>Оснащение номера</span>
+                                <ul class="catalog-pin-list">
+                                    <li class="catalog-pin-item pin-tooltip1">
+                                        <a href="#">
+                                            <img src="img/Vector.png" alt="">
+                                        </a>
+                                    </li class="catalog-pin-item">
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="rooms-description-item">
+                            <p>Цена за сутки:<span class="rooms-price">100₽</span> </p>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-orange">Забронировать</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="catalog-rooms rooms-2">
+                    <img src="img/pic2.png" alt="Эконом плюс" width="270" height="182">
+                    <ul class="rooms-description-list">
+                        <li>
+                            <h3 class="catalog-rooms-headline">Эконом плюс</h3>
+                        </li>
+                        <li class="rooms-description-item">
+                            <p>Размеры (ШхГхВ) - 90х70х180 см</p>
+                        </li class="rooms-description-item">
+                        <li class="rooms-description-item">
+                            <p>Площадь - 0,90 м2</p>
+                        </li>
+                        <li class="rooms-description-item">
+                            <div class="pin-flex">
+                                <span>Оснащение номера</span>
+                                <ul class="catalog-pin-list">
+                                    <li class="catalog-pin-item">
+                                        <a href="#">
+                                            <img src="img/Vector-1.png" alt="">
+                                        </a>
+                                    </li class="catalog-pin-item">
+                                    <li class="catalog-pin-item">
+                                        <a href="#">
+                                            <img src="img/Vector-2.png" alt="">
+                                        </a>
+                                    </li>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="rooms-description-item">
+                            <p>Цена за сутки:<span class="rooms-price">200₽</span> </p>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-orange">Забронировать</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="catalog-rooms rooms-3">
+                    <img src="img/pic4.png" alt="Комфорт" width="270" height="182">
+                    <ul class="rooms-description-list">
+                        <li>
+                            <h3 class="catalog-rooms-headline">Комфорт</h3>
+                        </li>
+                        <li class="rooms-description-item">
+                            <p>Размеры (ШхГхВ) - 100х125х180 см</p>
+                        </li>
+                        <li class="rooms-description-item">
+                            <p>Площадь - 1,13 м2</p>
+                        </li>
+                        <li class="rooms-description-item">
+                            <div class="pin-flex">
+                                <span>Оснащение номера</span>
+                                <ul class="catalog-pin-list">
+                                    <li class="catalog-pin-item">
+                                        <a href="#">
+                                            <img src="img/Vector-1.png" alt="">
+                                        </a>
+                                    </li class="catalog-pin-item">
+                                    <li class="catalog-pin-item">
+                                        <a href="#">
+                                            <img src="img/Vector-2.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="catalog-pin-item pin-tooltip2">
+                                        <a href="#">
+                                            <img src="img/Vector-4.png" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="rooms-description-item">
+                            <p>Цена за сутки:<span class="rooms-price">250₽</span> </p>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-orange">Забронировать</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="catalog-rooms rooms-4">
+                    <img src="img/pic4.png" alt="Сьют" width="270" height="182">
+                    <ul class="rooms-description-list">
+                        <li>
+                            <h3 class="catalog-rooms-headline">Сьют</h3>
+                        </li>
+                        <li class="rooms-description-item">
+                            <p>Размеры (ШхГхВ) - 125х125х180 см</p>
+                        </li>
+                        <li class="rooms-description-item">
+                            <p>Площадь - 1,56 м2</p>
+                        </li>
+                        <li class="rooms-description-item">
+                            <div class="pin-flex">
+                                <span>Оснащение номера</span>
+                                <ul class="catalog-pin-list">
+                                    <li class="catalog-pin-item">
+                                        <a href="#">
+                                            <img src="img/Vector-1.png" alt="">
+                                        </a>
+                                    </li class="catalog-pin-item">
+                                    <li class="catalog-pin-item">
+                                        <a href="#">
+                                            <img src="img/Vector-2.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="catalog-pin-item pin-tooltip2">
+                                        <a href="#">
+                                            <img src="img/Vector-4.png" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="rooms-description-item">
+                            <p>Цена за сутки:<span class="rooms-price">350₽</span> </p>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-orange">Забронировать</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="catalog-rooms rooms-5">
+                    <img src="img/pic5.png" alt="Люкс" width="270" height="182">
+                    <ul class="rooms-description-list">
+                        <li>
+                            <h3 class="catalog-rooms-headline">Люкс</h3>
+                        </li>
+                        <li class="rooms-description-item">
+                            <p>Размеры (ШхГхВ) - 160х160х180 см</p>
+                        </li>
+                        <li class="rooms-description-item">
+                            <p>Площадь - 2,56 м2</p>
+                        </li>
+                        <li class="rooms-description-item">
+                            <div class="pin-flex">
+                                <span>Оснащение номера</span>
+                                <ul class="catalog-pin-list">
+                                    <li class="catalog-pin-item">
+                                        <a href="#">
+                                            <img src="img/Vector-1.png" alt="">
+                                        </a>
+                                    </li class="catalog-pin-item">
+                                    <li class="catalog-pin-item">
+                                        <a href="#">
+                                            <img src="img/Vector-2.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="catalog-pin-item pin-tooltip2">
+                                        <a href="#">
+                                            <img src="img/Vector-4.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="catalog-pin-item">
+                                        <a href="#">
+                                            <img src="img/Vector-3.png" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="rooms-description-item">
+                            <p>Цена за сутки:<span class="rooms-price">500₽</span> </p>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-orange">Забронировать</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="catalog-rooms rooms-6">
+                    <img src="img/pic6.png" alt="Супер-люкс" width="270" height="182">
+                    <ul class="rooms-description-list">
+                        <li>
+                            <h3 class="catalog-rooms-headline">Супер-люкс</h3>
+                        </li>
+                        <li class="rooms-description-item">
+                            <p>Размеры (ШхГхВ) - 180х160х180 см</p>
+                        </li>
+                        <li class="rooms-description-item">
+                            <p>Площадь - 2,88 м2</p>
+                        </li>
+                        <li class="rooms-description-item">
+                            <div class="pin-flex">
+                                <span>Оснащение номера</span>
+                                <ul class="catalog-pin-list">
+                                    <li class="catalog-pin-item">
+                                        <a href="#">
+                                            <img src="img/Vector-1.png" alt="">
+                                        </a>
+                                    </li class="catalog-pin-item">
+                                    <li class="catalog-pin-item">
+                                        <a href="#">
+                                            <img src="img/Vector-2.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="catalog-pin-item pin-tooltip2">
+                                        <a href="#">
+                                            <img src="img/Vector-4.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="catalog-pin-item">
+                                        <a href="#">
+                                            <img src="img/Vector-3.png" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="rooms-description-item">
+                            <p>Цена за сутки:<span class="rooms-price">600₽</span> </p>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-orange">Забронировать</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="offer center">
+            <div class="offer-bgc">
+                <div class="offer-promo">
+                    <p class="offer-long">Каждый 7-й день</p>
+                    <span class="offer-short">бесплатно!</span>
+                    <p class="offer-description">Акция действует при размещении<br>в номерах “Люкс” и “Супер-Люкс” </p>
+                    <a href="#" type="submit" class="btn-white">Забронировать</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-info-block">
+            <div class="footer-info">
+                <h2 class="footer-headline">Как нас найти</h2>
+                <ul class="footer-info-list">
+                    <li class="footer-info-item">
+                        <span>Адрес</span>
+                        <p class="footer-description">Ростов-на-Дону, ул Большая Садовая, д 102</p>
+                    </li>
+                    <li class="footer-info-item">
+                        <span>Режим работы</span>
+                        <p class="footer-description">Ежедневно, с 9:00 до 20:00</p>
+                    </li>
+                    <li class="footer-info-item">
+                        <span>Телефон</span>
+                        <p class="footer-description">8 (863) 333-55-99</p>
+                    </li>
+                    <li class="footer-info-item">
+                        <span>E-mail</span>
+                        <p class="footer-description">info@cat-hotel.ru</p>
+                    </li>
+                    <li class="footer-info-item">
+                        <span>Социальные сети</span>
+                        <ul class="footer-social-list">
+                            <li class="footer-social-item">
+                                <a href="#" class="social-btn">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="footer-social-item">
+                                <a href="#" class="social-btn">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="footer-social-item">
+                                <a href="#" class="social-btn">
+                                    <i class="fab fa-vk"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-map">
+                <iframe src="https://yandex.ru/map-widget/v1/-/CKEBF26o" width="798" height="639" frameborder="0" allowfullscreen="true"></iframe>
+            </div>
+        </div>
+        <nav class="site-navigation center">
+            <a href="#">
+                <img src="../../img/logo.png" alt="" width="63" height="52">
+            </a>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Почему мы?</a>
+                </li class="nav-item">
+                <li class="nav-item">
+                    <a href="catalog.html" class="nav-link">Номера</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Отзывы</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Как нас найти</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="footer-copyright">
+            <div class="copyright-block center">
+                <p><i class="far fa-copyright"></i>2019 Все права защищены</p>
+                <p>Политика конфиденциальности</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/all.min.js"></script>
+</body>
+</html>

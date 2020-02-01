@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hotel Cats</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/vars.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="modal modal-booking">
+        <button class="modal-close" type="button">Закрыть</button>
+        <h2 class="modal-headline">Забронировать номер</h2>
+        <form action="#" class="booking-form" method="POST">
+            <p>
+                <label class="visually-hidden" for="user-name">Ваше имя</label>
+                <input class="name-icon-user" id="user-name" type="text" name="name" placeholder="Ваше имя">
+            </p>
+            <p>
+                <label class="visually-hidden" for="pet-name">Имя питомца</label>
+                <input class="pet-icon-user" id="pet-name" type="text" name="pet-name" placeholder="Имя Питомца">
+            </p>
+            <p>
+                <label class="visually-hidden" for="phone">Телефон</label>
+                <input class="pet-icon-user" id="phone" type="phone" name="phone" placeholder="Телефон">
+            </p>
+            <p>
+                <label class="visually-hidden" for="mail">E-mail</label>
+                <input class="pet-icon-user" id="mail" type="email" name="mail" placeholder="E-mail">
+            </p>
+            <a href="#" class="rooms-btn" type="submit">Отправить заявку</a>
+        </form>
+    </section>
+    <section class="modal-feedback">
+        <button class="modal-close" type="button">Закрыть</button>
+        <h2 class="modal-headline">Спасибо за заявку!</h2>
+        <p>Мы свяжемся с вами в ближайшее время</p>
+        <a href="#" class="rooms-btn">Ок</a>
+    </section>
+    <script src="js/all.min.js"></script>
+    <script src="js/modal.js"></script>
+</body>
+</html>
