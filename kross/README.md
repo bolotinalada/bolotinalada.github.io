@@ -1,2 +1,0 @@
-# bolotinalada.github.io
-Portfolio
