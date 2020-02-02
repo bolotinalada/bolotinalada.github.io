@@ -1,0 +1,21 @@
+@media screen and (max-width: 768px) {
+  .site-navigation {
+    width: 724px;
+    margin: 0 auto; }
+  .header-promo {
+    width: 768px;
+    margin: 0;
+    margin-bottom: 296px; }
+    .header-promo::before {
+      left: 22px; }
+    .header-promo .promo-block {
+      left: 390px; }
+      .header-promo .promo-block .promo-headline {
+        font-size: 50px; }
+      .header-promo .promo-block .promo-description {
+        font-size: 16px; }
+    .header-promo .form-block {
+      left: 174px; }
+  .factoids-block {
+    width: 538px;
+    margin: 0 auto; } }
