@@ -19,6 +19,9 @@ input[type="radio"].visually-hidden {
   border: 0;
   list-style: none; }
 
+button {
+  cursor: pointer; }
+
 body {
   width: 100%;
   height: 100%;
@@ -318,12 +321,13 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: 1720px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  margin-bottom: 250px; }
   .reasons .reasons-left {
     position: relative; }
     .reasons .reasons-left .reasons-factoids {
       position: absolute;
-      bottom: -93px;
+      bottom: -70px;
       right: 0;
       width: 600px;
       padding: 20px;
@@ -341,6 +345,8 @@ body {
           font-weight: 600;
           font-size: 14px;
           background-color: #7eb252; }
+          .reasons .reasons-left .reasons-factoids .reasons-factoids-item .factoids-btn .fa-long-arrow-alt-right {
+            margin-left: 20px; }
   .reasons .reasons-block {
     margin-left: 70px; }
     .reasons .reasons-block .reasons-headline {
@@ -366,6 +372,109 @@ body {
       .reasons .reasons-block .reasons-list .reasons-item .fa-chevron-right {
         color: #7eb252;
         margin-right: 45px; }
+
+.history {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1720px;
+  margin: 0 auto; }
+  .history .history-left {
+    position: relative; }
+    .history .history-left .history-headline {
+      margin-top: 110px;
+      margin-bottom: 55px;
+      padding-left: 275px;
+      font-size: 40px;
+      font-weight: 800; }
+    .history .history-left .history-left-block {
+      position: absolute;
+      z-index: 999;
+      right: -30px;
+      padding-left: 275px;
+      padding-right: 45px;
+      padding-top: 60px;
+      padding-bottom: 60px;
+      margin-bottom: 47px;
+      background-color: #f6f9f3; }
+      .history .history-left .history-left-block .history-list .history-item {
+        margin-bottom: 20px; }
+  .history .history-right {
+    position: relative; }
+    .history .history-right .history-right-block {
+      position: absolute;
+      bottom: 0;
+      left: -440px;
+      width: 370px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      background-color: #ffffff; }
+      .history .history-right .history-right-block .btn-history {
+        padding: 25px 0;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 800;
+        text-transform: uppercase;
+        background-color: #7eb252; }
+        .history .history-right .history-right-block .btn-history .fa-long-arrow-alt-right {
+          margin-left: 25px; }
+      .history .history-right .history-right-block .history-right-description {
+        font-size: 14px;
+        font-weight: 800;
+        text-transform: uppercase;
+        padding-right: 44px;
+        padding-bottom: 25px; }
+    .history .history-right .history-form .history-input {
+      width: 100%;
+      padding: 15px 0;
+      margin-bottom: 35px;
+      border-bottom: 1px solid #7eb252; }
+
+.cite {
+  position: relative; }
+  .cite::before {
+    content: '';
+    position: absolute;
+    top: -200px;
+    left: 0;
+    background-image: url("../../img/bgc-cite1.png");
+    background-repeat: no-repeat;
+    background-position: -700px 0;
+    width: 500px;
+    height: 1137px; }
+  .cite::after {
+    content: '';
+    position: absolute;
+    bottom: -650px;
+    right: 0;
+    background-image: url("../../img/bgc-cite2.png");
+    background-repeat: no-repeat;
+    background-position: 80px 0;
+    width: 500px;
+    height: 1137px; }
+  .cite .cite-block {
+    width: 770px;
+    padding: 60px 0;
+    margin: 200px auto;
+    text-align: center;
+    border-top: 1px solid #7eb252;
+    border-bottom: 1px solid #7eb252; }
+    .cite .cite-block .cite-text {
+      font-size: 24px;
+      font-weight: 800;
+      margin-bottom: 50px; }
+    .cite .cite-block .cite-author {
+      font-size: 16px; }
+      .cite .cite-block .cite-author span {
+        color: #9a9a9a; }
 
 @media screen and (max-width: 768px) {
   .site-navigation {
@@ -425,6 +534,7 @@ body {
         float: left; }
   .reasons {
     width: 100%;
+    margin-bottom: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
     -webkit-flex-direction: column-reverse;
@@ -436,7 +546,8 @@ body {
         width: 100%;
         height: 50%; }
       .reasons .reasons-left .reasons-factoids {
-        left: 65px; }
+        left: 65px;
+        z-index: 999; }
     .reasons .reasons-block {
       margin-top: 698px;
       margin-left: 0; }
@@ -445,4 +556,57 @@ body {
         text-align: center; }
       .reasons .reasons-block .reasons-list {
         width: 538px;
-        margin: 0 auto; } }
+        margin: 0 auto; }
+  .history {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .history .history-left,
+    .history .history-right {
+      width: 100%;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1 1 250px;
+          -ms-flex: 1 1 250px;
+              flex: 1 1 250px; }
+    .history .history-left .history-headline {
+      padding-left: 0;
+      text-align: center; }
+    .history .history-left .history-left-block {
+      padding-left: 22px;
+      padding-bottom: 100px; }
+    .history .history-right {
+      position: relative;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+      -webkit-flex-direction: column-reverse;
+          -ms-flex-direction: column-reverse;
+              flex-direction: column-reverse; }
+      .history .history-right .history-right-block {
+        top: 500px;
+        left: 385px; }
+      .history .history-right .history-img {
+        position: absolute;
+        top: -25px;
+        left: 22px;
+        z-index: 999; }
+        .history .history-right .history-img img {
+          margin-top: 420px;
+          width: 352px;
+          height: 420px; } }
