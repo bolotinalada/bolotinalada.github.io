@@ -194,117 +194,178 @@ body {
       font-size: 16px; }
 
 .problems {
-  position: relative;
-  width: 1720px;
-  margin: 0 auto;
-  margin-top: 200px; }
-  .problems::after {
-    content: ' ';
-    position: absolute;
-    bottom: 35px;
-    left: 950px;
-    background-image: url("../../img/problems.png");
-    width: 500px;
-    height: 689px; }
+  margin-top: 200px;
+  margin-bottom: 290px; }
   .problems .problems-headline {
     margin-top: 50px;
     margin-bottom: 45px;
     font-size: 40px;
     font-weight: 800; }
-  .problems .problems-block {
-    padding-bottom: 30px;
+  .problems .problems-bgc {
     background-color: #f6f9f3; }
-
-.problems-list {
-  font-size: 14px; }
-  .problems-list .problems-list-block {
-    width: 650px; }
-    .problems-list .problems-list-block .problems-item {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
+    .problems .problems-bgc .problems-flex {
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      width: 1170px;
+      margin: 0 auto; }
+      .problems .problems-bgc .problems-flex:not(.btn-block) {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex; }
+      .problems .problems-bgc .problems-flex .problems-block {
+        padding-bottom: 30px;
+        padding-right: 20px; }
+        .problems .problems-bgc .problems-flex .problems-block .problems-list {
+          font-size: 14px; }
+          .problems .problems-bgc .problems-flex .problems-block .problems-list .problems-list-block {
+            width: 650px; }
+            .problems .problems-bgc .problems-flex .problems-block .problems-list .problems-list-block .problems-item {
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              padding: 30px 0;
+              text-align: left;
+              border-bottom: 1px solid #e6efde; }
+              .problems .problems-bgc .problems-flex .problems-block .problems-list .problems-list-block .problems-item span {
+                margin-right: 20px;
+                text-align: right;
+                color: #7eb252;
+                font-weight: 600; }
+          .problems .problems-bgc .problems-flex .problems-block .problems-list .block-top .problems-item {
+            text-transform: uppercase;
+            font-weight: 800; }
+            .problems .problems-bgc .problems-flex .problems-block .problems-list .block-top .problems-item .problems-reason {
+              font-size: 16px; }
+          .problems .problems-bgc .problems-flex .problems-block .problems-list .block-bottom {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-wrap: wrap;
+                -ms-flex-wrap: wrap;
+                    flex-wrap: wrap; }
+            .problems .problems-bgc .problems-flex .problems-block .problems-list .block-bottom .block-bottom-item {
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-flex: 1;
+              -webkit-flex-grow: 1;
+                  -ms-flex-positive: 1;
+                      flex-grow: 1;
+              width: 325px;
+              padding: 25px 0;
+              font-size: 16px;
+              border-bottom: 1px solid #e6efde; }
+              .problems .problems-bgc .problems-flex .problems-block .problems-list .block-bottom .block-bottom-item span {
+                margin-right: 20px;
+                font-size: 12px;
+                font-weight: 600;
+                color: #7eb252; }
+      .problems .problems-bgc .problems-flex .reviews-block {
+        position: relative; }
+        .problems .problems-bgc .problems-flex .reviews-block img {
+          position: absolute;
+          bottom: 35px; }
+        .problems .problems-bgc .problems-flex .reviews-block .reviews-block-item {
+          position: absolute;
+          top: 400px;
+          width: 415px;
+          padding: 20px;
+          font-size: 16px;
+          background-color: #f6f9f3; }
+          .problems .problems-bgc .problems-flex .reviews-block .reviews-block-item .problems-description {
+            position: relative;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            padding-left: 70px;
+            border: 1px solid #7eb252; }
+            .problems .problems-bgc .problems-flex .reviews-block .reviews-block-item .problems-description .reviews-link {
+              display: block;
+              position: absolute;
+              bottom: -10px;
+              padding: 0 10px;
+              color: #7eb252;
+              font-size: 14px;
+              font-weight: 600;
+              background-color: #f6f9f3; }
+  .problems .btn-block {
+    width: 1170px;
+    margin: 0 auto; }
+    .problems .btn-block .green-btn {
+      display: block;
+      float: right;
+      width: 500px;
+      margin-top: 20px;
       padding: 30px 0;
-      text-align: left;
-      border-bottom: 1px solid #e6efde; }
-      .problems-list .problems-list-block .problems-item span {
-        margin-right: 20px;
-        text-align: right;
-        color: #7eb252;
-        font-weight: 600; }
-  .problems-list .block-top .problems-item {
-    text-transform: uppercase;
-    font-weight: 800; }
-    .problems-list .block-top .problems-item .problems-reason {
-      font-size: 16px; }
-  .problems-list .block-bottom {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap; }
-    .problems-list .block-bottom .block-bottom-item {
+      color: #ffffff;
+      text-transform: uppercase;
+      text-align: center;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 14px;
+      background-color: #7eb252; }
+      .problems .btn-block .green-btn .fa-long-arrow-alt-right {
+        margin-left: 20px; }
+
+.reasons {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1720px;
+  margin: 0 auto; }
+  .reasons .reasons-left {
+    position: relative; }
+    .reasons .reasons-left .reasons-factoids {
+      position: absolute;
+      bottom: -93px;
+      right: 0;
+      width: 600px;
+      padding: 20px;
+      background-color: #ffffff; }
+      .reasons .reasons-left .reasons-factoids .reasons-factoids-item {
+        border: 1px solid #7eb252; }
+        .reasons .reasons-left .reasons-factoids .reasons-factoids-item .reasons-factoids-description {
+          padding: 40px 0 0 40px; }
+        .reasons .reasons-left .reasons-factoids .reasons-factoids-item .factoids-btn {
+          width: 100%;
+          margin-top: 40px;
+          padding: 30px 0;
+          color: #ffffff;
+          text-transform: uppercase;
+          font-weight: 600;
+          font-size: 14px;
+          background-color: #7eb252; }
+  .reasons .reasons-block {
+    margin-left: 70px; }
+    .reasons .reasons-block .reasons-headline {
+      margin: 50px 0;
+      font-size: 40px;
+      font-weight: 800; }
+    .reasons .reasons-block .reasons-name {
+      margin-bottom: 65px;
+      font-style: 14px;
+      font-weight: 800;
+      text-transform: uppercase; }
+    .reasons .reasons-block .reasons-list .reasons-item {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-flex: 1;
-      -webkit-flex-grow: 1;
-          -ms-flex-positive: 1;
-              flex-grow: 1;
-      width: 325px;
-      padding: 25px 0;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
       font-size: 16px;
-      border-bottom: 1px solid #e6efde; }
-      .problems-list .block-bottom .block-bottom-item span {
-        margin-right: 20px;
-        font-size: 12px;
-        font-weight: 600;
-        color: #7eb252; }
-
-.reviews-block {
-  position: absolute;
-  left: 945px;
-  bottom: 35px;
-  z-index: 999; }
-  .reviews-block .reviews-block-item {
-    width: 415px;
-    padding: 20px;
-    font-size: 16px;
-    background-color: #f6f9f3; }
-    .reviews-block .reviews-block-item .problems-description {
-      position: relative;
-      padding-top: 40px;
-      padding-bottom: 40px;
-      padding-left: 70px;
-      border: 1px solid #7eb252; }
-      .reviews-block .reviews-block-item .problems-description .reviews-link {
-        display: block;
-        position: absolute;
-        bottom: -10px;
-        padding: 0 10px;
+      margin-bottom: 50px; }
+      .reasons .reasons-block .reasons-list .reasons-item .fa-chevron-right {
         color: #7eb252;
-        font-size: 14px;
-        font-weight: 600;
-        background-color: #f6f9f3; }
-
-.green-btn {
-  display: block;
-  float: right;
-  width: 500px;
-  margin-top: 20px;
-  padding: 30px 0;
-  color: #ffffff;
-  text-transform: uppercase;
-  text-align: center;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 14px;
-  background-color: #7eb252; }
-  .green-btn .fa-long-arrow-alt-right {
-    margin-left: 20px; }
+        margin-right: 45px; }
 
 @media screen and (max-width: 768px) {
   .site-navigation {
@@ -326,4 +387,62 @@ body {
       left: 174px; }
   .factoids-block {
     width: 538px;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+  .problems {
+    width: 100%;
+    position: relative; }
+    .problems .problems-headline {
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 50px;
+      text-align: center; }
+    .problems .problems-bgc {
+      width: 768px; }
+      .problems .problems-bgc .problems-flex {
+        width: 650px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+        .problems .problems-bgc .problems-flex .problems-block {
+          padding-bottom: 0; }
+        .problems .problems-bgc .problems-flex .reviews-block {
+          width: 100%;
+          background-color: #a4c58c; }
+          .problems .problems-bgc .problems-flex .reviews-block img {
+            top: 30px;
+            left: 70px; }
+          .problems .problems-bgc .problems-flex .reviews-block .reviews-block-item {
+            top: 560px;
+            left: 93px; }
+    .problems .btn-block {
+      position: absolute;
+      bottom: -840px;
+      left: 128px;
+      width: 500px; }
+      .problems .btn-block .green-btn {
+        float: left; }
+  .reasons {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse; }
+    .reasons .reasons-left {
+      width: 100%; }
+      .reasons .reasons-left img {
+        width: 100%;
+        height: 50%; }
+      .reasons .reasons-left .reasons-factoids {
+        left: 65px; }
+    .reasons .reasons-block {
+      margin-top: 698px;
+      margin-left: 0; }
+      .reasons .reasons-block .reasons-headline,
+      .reasons .reasons-block .reasons-name {
+        text-align: center; }
+      .reasons .reasons-block .reasons-list {
+        width: 538px;
+        margin: 0 auto; } }

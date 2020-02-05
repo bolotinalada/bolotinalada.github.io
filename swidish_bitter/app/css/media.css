@@ -18,4 +18,62 @@
       left: 174px; }
   .factoids-block {
     width: 538px;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+  .problems {
+    width: 100%;
+    position: relative; }
+    .problems .problems-headline {
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 50px;
+      text-align: center; }
+    .problems .problems-bgc {
+      width: 768px; }
+      .problems .problems-bgc .problems-flex {
+        width: 650px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+        .problems .problems-bgc .problems-flex .problems-block {
+          padding-bottom: 0; }
+        .problems .problems-bgc .problems-flex .reviews-block {
+          width: 100%;
+          background-color: #a4c58c; }
+          .problems .problems-bgc .problems-flex .reviews-block img {
+            top: 30px;
+            left: 70px; }
+          .problems .problems-bgc .problems-flex .reviews-block .reviews-block-item {
+            top: 560px;
+            left: 93px; }
+    .problems .btn-block {
+      position: absolute;
+      bottom: -840px;
+      left: 128px;
+      width: 500px; }
+      .problems .btn-block .green-btn {
+        float: left; }
+  .reasons {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse; }
+    .reasons .reasons-left {
+      width: 100%; }
+      .reasons .reasons-left img {
+        width: 100%;
+        height: 50%; }
+      .reasons .reasons-left .reasons-factoids {
+        left: 65px; }
+    .reasons .reasons-block {
+      margin-top: 698px;
+      margin-left: 0; }
+      .reasons .reasons-block .reasons-headline,
+      .reasons .reasons-block .reasons-name {
+        text-align: center; }
+      .reasons .reasons-block .reasons-list {
+        width: 538px;
+        margin: 0 auto; } }
