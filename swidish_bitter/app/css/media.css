@@ -131,4 +131,10 @@
         .history .history-right .history-img img {
           margin-top: 420px;
           width: 352px;
-          height: 420px; } }
+          height: 420px; }
+  .cite {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 700px; }
+    .cite .cite-block {
+      width: 80%; } }
