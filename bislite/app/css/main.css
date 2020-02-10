@@ -107,6 +107,7 @@ header {
               color: #2aacc8; }
 
 .slider {
+  width: 100%;
   padding: 20px 0;
   background-color: #81e4ed; }
   .slider .slider-block {
