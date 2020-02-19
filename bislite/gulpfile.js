@@ -29,8 +29,9 @@ function bsReload(done) { browserSync.reload(); done(); };
 
 gulp.task('scripts', function() {
     return gulp.src([
-        'app/libs/jquery/dist/jquery.js',
-        'app/libs/owl.carousel/dist/owl.carousel.js',
+        'app/libs/jquery/dist/jquery.min.js',
+        'app/libs/owl.carousel/dist/owl.carousel.min.js',
+        'app/js/common.js'
     ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
@@ -73,7 +74,7 @@ gulp.task('prebuild', async function() {
 });
 
 gulp.task('watch', function() {
-    gulp.watch('app/sass/**/*.sass', gulp.series('sass'));
+    gulp.watch('app/main.sass', gulp.series('sass'));
     // gulp.watch(['libs/**/*.js', 'app/js/common.js'], gulp.parallel('scripts'));
     gulp.watch('app/*.html', gulp.parallel('code'));
 });
