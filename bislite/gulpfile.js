@@ -74,7 +74,7 @@ gulp.task('prebuild', async function() {
 });
 
 gulp.task('watch', function() {
-    gulp.watch('app/main.sass', gulp.series('sass'));
+    gulp.watch('app/sass/main.sass', gulp.series('sass'));
     // gulp.watch(['libs/**/*.js', 'app/js/common.js'], gulp.parallel('scripts'));
     gulp.watch('app/*.html', gulp.parallel('code'));
 });

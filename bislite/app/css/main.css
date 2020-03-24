@@ -137,5 +137,106 @@ header {
 
 .advantages {
   width: 100%;
+  padding: 60px 0;
   background-color: #e8ebf1; }
-  
+  .advantages .advantages-list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .advantages .advantages-list .advantages-item {
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .advantages .advantages-list .advantages-item .advantages-headline-block {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        margin-bottom: 20px; }
+        .advantages .advantages-list .advantages-item .advantages-headline-block .headline-icon {
+          height: 40px;
+          width: 40px;
+          margin-right: 20px;
+          background-color: #2aacc8;
+          border-radius: 20px; }
+        .advantages .advantages-list .advantages-item .advantages-headline-block .icon-pen,
+        .advantages .advantages-list .advantages-item .advantages-headline-block .icon-frame,
+        .advantages .advantages-list .advantages-item .advantages-headline-block .icon-line,
+        .advantages .advantages-list .advantages-item .advantages-headline-block .icon-air {
+          position: relative; }
+        .advantages .advantages-list .advantages-item .advantages-headline-block .icon-pen::after {
+          position: absolute;
+          top: 8px;
+          left: 10px;
+          content: ' ';
+          width: 21px;
+          height: 24px;
+          background-image: url("../../img/icon-pen.png");
+          background-repeat: no-repeat;
+          background-size: cover; }
+        .advantages .advantages-list .advantages-item .advantages-headline-block .icon-frame::after {
+          position: absolute;
+          top: 12px;
+          left: 9px;
+          content: ' ';
+          width: 21px;
+          height: 17px;
+          background-image: url("../../img/icon-frame.png");
+          background-repeat: no-repeat;
+          background-size: cover; }
+        .advantages .advantages-list .advantages-item .advantages-headline-block .icon-line::after {
+          position: absolute;
+          top: 13px;
+          left: 12px;
+          content: ' ';
+          width: 16px;
+          height: 16px;
+          background-image: url("../../img/icon-line.png");
+          background-repeat: no-repeat;
+          background-size: cover; }
+        .advantages .advantages-list .advantages-item .advantages-headline-block .icon-air::after {
+          position: absolute;
+          top: 10px;
+          left: 9px;
+          content: ' ';
+          width: 26px;
+          height: 25px;
+          background-image: url("../../img/icon-air.png");
+          background-repeat: no-repeat;
+          background-size: cover; }
+        .advantages .advantages-list .advantages-item .advantages-headline-block .advantages-headline {
+          display: inline-block;
+          color: #000000;
+          font-size: 15px;
+          font-weight: 700;
+          text-transform: uppercase; }
+      .advantages .advantages-list .advantages-item .advantages-description {
+        margin-bottom: 30px;
+        font-size: 13px; }
+      .advantages .advantages-list .advantages-item .advantages-link {
+        color: #2aacc8; }
+        .advantages .advantages-list .advantages-item .advantages-link .fa-angle-right {
+          margin-right: 8px;
+          color: #000000; }
+
+.info {
+  border-top: 1px solid #363636;
+  border-bottom: 1px solid #363636; }
+  .info .works {
+    padding-top: 20px;
+    padding-bottom: 40px; }
+    .info .works .works-list {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
