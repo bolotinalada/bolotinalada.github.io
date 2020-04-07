@@ -1,0 +1,378 @@
+@import config
+
+// // CUSTOM USER STYLES & IMPORTS
+
+a
+    color: #604848
+    text-decoration: none
+ul,
+li
+    list-style-type: none
+    padding: 0
+    margin: 0
+
+//Общие стили для заголовков//
+
+.headline-section
+    margin: 40px 0
+    text-align: center
+    text-transform: uppercase
+    font-size: 44px
+    .headline-green
+        color: #66a55f
+    .headline-grey
+        color: #604848
+
+//Общие стили для карточки товаров//
+
+.catalog-item
+    position: relative
+    display: inline-block
+    width: 270px
+    margin-left: 20px
+    margin-bottom: 20px
+    font-size: 16px
+    line-height: 20px
+    font-weight: bold
+    text-align: center
+    background-color: #f5f5f5
+    &:hover
+        .actions
+            display: block 
+    .flag
+        &::before
+            content: 'SALE!'
+            position: absolute
+            top: 0
+            right: 0
+            padding: 10px 15px 10px 15px
+            background-color: #ed1c24
+            color: #ffffff
+    .actions
+        display: none
+        position: absolute
+        top: 0
+        left: 0
+        width: 270px
+        height: 270px
+        padding: 40px 0
+        background: rgba(255, 255, 255, 0.7)
+        z-index: 10
+    .actions,
+    .catalog-item_content
+        .product_title,
+        .product_price,
+        .product-rating_stars,
+        .product_btn
+            display: block
+        .product_title
+            font-size: 24px
+            line-height: 28px
+            padding-top: 20px
+            padding-bottom: 10px
+            &:hover
+                color: #8fb15d
+                text-decoration: none
+        .product_price
+            font-size: 26px
+            color: #66a55f
+            font-weight: 700
+            line-height: 28px
+            .price-discount
+                text-decoration: line-through
+                font-size: 12px
+        .product-rating_stars
+            margin-top: 15px
+            .fa-star
+                color: #66a55f
+        .product_btn
+            background-color: #8fb15d
+            font-size: 16px
+            font-weight: 700
+            line-height: 18px
+            padding: 10px 0
+            text-transform: uppercase
+            color: #ffffff
+            margin-top: 15px
+            margin-left: auto
+            margin-right: auto
+            width: 150px
+            &:hover
+                color: #ffffff
+                text-decoration: none
+                background-color: #66a55f
+            .fa-shopping-cart
+                font-size: 12px
+                .image
+                    width: 270px
+                    height: 270px
+                    img
+                        max-width: 100%
+    .catalog-item_content
+        height: 100%
+        background-color: #ffffff
+
+//Общие стили для стрелок навигации слайдера//
+
+.owl-carousel 
+    .owl-nav 
+        margin: 0
+        button.owl-prev,
+        button.owl-next
+            position: absolute
+            top: 50%
+            width: 54px
+            height: 54px
+            background-color: #ffffff
+            border-radius: 0
+            font-size: 25px
+            color: #a9a9a9
+            &:hover
+                background-color: #7ca977
+        button.owl-prev
+            left: 0
+            right: auto
+        button.owl-next
+            right: 0
+            left: auto
+
+//Общие стили для точек навигации слайдера//
+
+.owl-theme
+    .owl-dots
+        width: 100%
+        text-align: center
+        margin-top: 60px
+        .owl-dot
+            span
+                width: 10px
+                height: 10px
+                background-color: #898989
+                border-radius: 10em
+                display: inline-block
+                margin: 7px
+        .owl-dot.active 
+            span
+                background-color: #66a558
+        .owl-dot
+            &:hover 
+                span
+                    background-color: #66a558
+
+//Шапка//
+
+.site-header
+    border-top: 6px solid #7ca877
+    padding-bottom: 5px
+.top_links
+    padding: 10px
+    a
+        font-size: 13px
+        line-height: 20px
+        margin: 2px 19px 0px 0px
+        &:hover
+            color: $accent
+            text-decoration: none
+.header-area-bottom
+    padding-bottom: 20px
+    border-bottom: 1px solid #dddddd
+
+.phone_block
+    padding-left: 9px
+.fa-phone-alt,
+.fa-map
+    font-size: 18px
+    color: #7ca877
+    margin-right: 9px
+.text-phone
+    color: #6b6b6b
+    font-size: 16px
+.phone-number
+    color: #606048
+    font-size: 18px
+    font-weight: 700
+    &:hover
+        color: #7ca877
+        text-decoration: none
+.adress-block
+    color: #6b6b6b
+    font-size: 16px
+    line-height: 18px
+    padding-left: 12px
+
+.link_cart,
+.link_lock
+    background-color: #7ca877
+    border-radius: 50px
+    &:hover
+        background-color: #604848
+.link_cart
+    position: relative
+    padding-top: 25px
+    padding-bottom: 11px
+    padding-left: 7px
+    padding-right: 6px
+    margin-right: 9px
+.count
+    position: absolute
+    top: 0
+    right: 0
+    background-color: #feb832
+    color: #ffffff
+    text-align: center
+    font-size: 12px
+    font-weight: 700
+    width: 19px
+    height: 19px
+    border-radius: 50px
+.link_lock
+    padding-top: 25px
+    padding-bottom: 11px
+    padding-left: 14px
+    padding-right: 14px
+.fa-shopping-cart,
+.fa-lock
+    font-size: 30px
+    color: #ffffff
+.fa-shopping-cart,
+.fa-wrench
+    margin-right: 7px
+    line-height: 12px
+
+//Навигация//
+
+.navigation
+    padding: 25px 0
+.menu-list
+    display: flex
+    .menu-item
+        margin-right: 25px
+        a
+            font-weight: 800
+            font-size: 18px
+            text-transform: uppercase
+            &:hover
+                color: #7ca877
+    .fa-angle-down
+        margin-left: 10px
+
+.topmenu
+    position: relative
+    &:hover
+        display: block
+    .submenu
+        background-color: #ffffff
+        visibility: hidden
+        opacity: 0
+        position: absolute
+        top: 100%
+        left: 0
+        right: auto
+        z-index: 10
+
+.menu-nav
+    ul
+        li
+            &:hover
+                .submenu
+                    translition: 0.3s
+                    visibility: visible
+                    opacity: 1
+.submenu
+    min-width: 230px
+    border: 5px solid #7ca877
+    box-shadow: 2px 2px 5px rgba(0,0,0,.2)
+    .submenu-item
+        padding: 10px
+        .submenu-link
+            text-transform: none
+            font-weight: 400
+            font-size: 16px
+            line-height: 20px
+            color: #7ca877
+            border-bottom: 1 px solid #f0f0f0
+            &:hover
+                color: #604848
+        
+input[type="search"]
+    width: 360px
+    padding: 10px 0px 10px 4px
+    border: 1px solid #dddddd
+
+.form-search
+    position: relative
+    button
+        background-color: transparent
+        border: none
+        width: 42px
+        height: 43px
+        position: absolute
+        top: 0
+        right: 0
+        cursor: pointer
+
+    .fa-search
+        color: #7ca877
+        font-size: 20px
+        &:hover
+            color: #604848
+
+//Слайдер//
+            
+.slider
+    position: relative
+    padding: 0
+    .slider-item
+        background-size: cover
+        background-repeat: no-repeat
+        position: relative
+        min-height: 700px
+        .slider-text
+            position: absolute
+            top: 250px
+            left: 60px
+            color: #ffffff
+            text-align: center
+            .slider-headline
+                font-family: $playball
+                font-size: 118px
+                font-weight: 400
+                line-height: 120px
+            .slider-description
+                font-size: 17px
+                font-weight: 300
+                line-height: 19px
+                margin-top: 3px
+                
+    .slider-1
+        background-image: url('../images/src/slider-1.jpg')
+    .slider-2
+        background-image: url('../images/src/slider-2.jpg')
+    .slider-3
+        background-image: url('../images/src/slider-3.jpg')
+
+
+//О нас//
+
+.about
+    margin-top: 30px
+    display: flex
+    justify-content: space-between
+    &-item
+        width: 33.333%
+        text-align: center
+        padding: 15px
+        align-items: flex-start
+    &-tittle
+        color: #604848
+        font-size: 24px
+        font-weight: 700
+        line-height: 26px
+        margin: 15px 0
+
+//Блог карусель//
+
+.blog-block
+    margin-top: 80px
+    padding: 60px 0 100px 0
+    background-color: #f6f6ee

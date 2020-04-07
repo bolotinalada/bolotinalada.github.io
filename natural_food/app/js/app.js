@@ -1,0 +1,25 @@
+// document.addEventListener("DOMContentLoaded", function() {
+
+// 	// Custom JS
+
+// });
+
+$(".slider").owlCarousel({
+	loop: true,
+	items: 1,
+	nav: true,
+	dots: false,
+	navText: ['<i class="fas fa-chevron-left"></i>','<i class="fas fa-chevron-right"></i>'],
+});
+
+$(".slider-arrivals").owlCarousel({
+	loop: true,
+	items: 4,
+	nav: false,
+}); 
+
+$(".blog").owlCarousel({
+	loop: true,
+	items: 4,
+	nav: false,
+});
