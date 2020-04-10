@@ -21,5 +21,8 @@ $(".slider-arrivals").owlCarousel({
 $(".blog").owlCarousel({
 	loop: true,
 	items: 4,
-	nav: false,
+	autoplay: true,
+	autoplayTimeout: 4000,
+	nav: true,
+	navText: ['<i class="fas fa-chevron-left"></i>','<i class="fas fa-chevron-right"></i>'],
 });
