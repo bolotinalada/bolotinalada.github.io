@@ -26,3 +26,17 @@ $(".blog").owlCarousel({
 	nav: true,
 	navText: ['<i class="fas fa-chevron-left"></i>','<i class="fas fa-chevron-right"></i>'],
 });
+
+// $(".slider-team").owlCarousel({
+// 	loop: true,
+// 	items: 4,
+// 	autoplay: true,
+// 	autoplayTimeout: 4000,
+// 	dots: true,
+// });
+
+$(".slider-team").owlCarousel({
+	loop: true,
+	items: 4,
+	dots: true,
+});
