@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="css/app.min.css">
 </head>
 <body>
-    <header class="site-header">
+	<header class="site-header">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 top_links">
@@ -24,52 +24,50 @@
 		<section class="header-area-bottom">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-12">
-						<ul class="d-flex justify-content-between">
-							<li>
-								<a href="#">
-									<img src="images/src/logo.png" alt="Natural Foods" width="260" height="50">
-								</a>
-							</li>
-							<li class="d-flex">
-								<a href="#">
-									<a href="#">
-										<i class="fas fa-phone-alt"></i>
-									</a>
-									<span class="phone_block d-flex flex-column">
-										<span class="text-phone">Call at us:</span>
-										<a href="#" class="phone-number">1-800-234-5677</a>
-									</span>
-								</a>
-							</li>
-							<li class="d-flex">
-								<i class="fas fa-map"></i>
-								<span class="adress-block">4578 MARMORA ROAD,<br> GLASGOW D04 89 GR.</span>
-							</li>
-							<li>
-								<a href="#" class="link_cart">
-									<i class="fas fa-shopping-cart"></i>
-									<span class="count">0</span>
-								</a>
-								<a href="#" class="link_lock">
-									<i class="fas fa-lock"></i>
-								</a>
-							</li>
-						</ul>
+					<div class="col-md-4">
+						<a href="index.html">
+							<img src="images/src/logo.png" alt="Natural Foods" width="260" height="50">
+						</a>
+					</div>
+					<div class="col-md-3 phone-block">
+						<a href="#">
+							<a href="#">
+								<i class="fas fa-phone-alt"></i>
+							</a>
+							<span class="phone_text">
+								<span class="text-phone">Call at us:</span>
+								<a href="#" class="phone-number">1-800-234-5677</a>
+							</span>
+						</a>
+					</div>
+					<div class="col-md-3">
+						<div class="adress-block">
+							<i class="fas fa-map"></i>
+							<span class="adress-block">4578 MARMORA ROAD,<br> GLASGOW D04 89 GR.</span>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<a href="#" class="link_cart">
+							<i class="fas fa-shopping-cart"></i>
+							<span class="count">0</span>
+						</a>
+						<a href="#" class="link_lock">
+							<i class="fas fa-lock"></i>
+						</a>
 					</div>
 				</div>
 			</div>
 		</section>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12 d-flex justify-content-between align-items-center navigation">
+				<div class="col-md-8">
 					<nav class="menu-nav">
 						<ul class="menu-list">
 							<li class="menu-item">
-								<a href="#">Home</a>
+								<a href="index.html">Home</a>
 							</li>
 							<li class="menu-item">
-								<a href="#" class="active-link">About is</a>
+								<a href="#">About is</a>
 							</li>
 							<li class="menu-item topmenu">
 								<a href="#">Shop<i class="fas fa-angle-down"></i></a>
@@ -99,15 +97,19 @@
 							</li>
 						</ul>
 					</nav>
+				</div>
+				<div class="col-md-4">
 					<form action="#" method="post" class="form-search">
 						<input type="search" id="search" name="search" placeholder="search ..." autofocus>
 						<button type="submit">
 							<i class="fas fa-search"></i>
 						</button>
+					</form>
+				</div>
 				</div>
 			</div>
-        </div>
-        <section class="breadcrumbs">
+		</div>
+		<section class="breadcrumbs">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -116,20 +118,22 @@
                 </div>
             </div>
         </section>
-    </header>
+	</header>
     <main class="site-content">
         <section class="container about-page">
             <div class="row">
-                <div class="col-md-12 d-flex">
+                <div class="col-md-4">
+					<h2 class="headline-section">Who we are</h2>
                     <div class="about-page_item weare">
-						<h2 class="headline-section">Who we are</h2>
 						<img src="images/src/apple.jpg" alt="" width="353" height="250">
 						<p class="about-page_title">A few words about our shop and our best qualified team</p>
 						<p>It is the best among the variety of the competing ones. We provide you with tons of information on various aspects of fishing. Our team of professionals will happily help you to deal with any issue.</p>
 						<p>Client is our first priority and a great amount of positive testimonials can prove this.</p>
 					</div>
-                    <div class="about-page_item history">
-						<h2 class="headline-section">History</h2>
+                </div>
+				<div class="col-md-4">
+					<h2 class="headline-section">History</h2>
+					<div class="about-page_item history">
 						<div class="history-item clearfix">
 							<span class="about-page_year">2018 -</span>
 							<p class="about-page_history">In early 1978s our company expanded the business and are still today providing the exceptional quality products to our valuable customers.</p>
@@ -143,8 +147,10 @@
 							<p class="about-page_history">In 2001 our company moves to a new facility and purchases a new 500,000-square-foot warehouse. November 2007 a second location was opened dedicated to serving customers’ needs with only the finest products.</p>
 						</div>
                     </div>
-                    <div class="about-page_item mission">
-						<h2 class="headline-section">Our mission</h2>
+				</div>
+                <div class="col-md-4">
+					<h2 class="headline-section">Our mission</h2>
+					<div class="about-page_item mission">
 						<p class="about-page_title">If you want to choose our company to work with, we will be glad to cooperate with you</p>
 						<p>We aim to create happy clients by selling the best products at the best prices, in a friendly, fun atmosphere. Our rating has remained at 100% with excellent and positive feedbacks. We are constantly adding new products and new lines of products with extra features, so come back.</p>
 						<div class="mission-list">
@@ -157,7 +163,7 @@
 							<p>Integrity</p>
 						</div>
                     </div>
-                </div>
+				</div>
             </div>
 		</section>
 		<section class="team-block">
@@ -263,36 +269,44 @@
 		<section class="advantages">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-12 d-flex">
-						<div class="advantages-block">
+					<div class="col-md-6">
+						<div class="advantages">
 							<h2 class="headline-section">Our advantages</h2>
 							<ul class="advantages-list">
 								<li class="advantages-item">
-									<h3>The Lowest Prices</h3>
+									<i class="fas fa-calculator"></i>
+									<h3 class="advantages-item_title">The Lowest Prices</h3>
 									<p>Low prices are the cornerstone of our vision, business idea and concept.</p>
 								</li>
 								<li class="advantages-item">
-									<h3>GMO Free</h3>
+									<i class="fas fa-thumbs-up"></i>
+									<h3 class="advantages-item_title">GMO Free</h3>
 									<p>Our products are only of the highest possible quality.</p>
 								</li>
 								<li class="advantages-item">
-									<h3>The Best Quality</h3>
+									<i class="fas fa-star"></i>
+									<h3 class="advantages-item_title">The Best Quality</h3>
 									<p>Our main goal is to sell the highest quality foods</p>
 								</li>
 								<li class="advantages-item">
-									<h3>Affordable Price</h3>
+									<i class="fas fa-tag"></i>
+									<h3 class="advantages-item_title">Affordable Price</h3>
 									<p>We have a huge selection of products to meet any taste and budget.</p>
 								</li>
 							</ul>
 						</div>
-						<div class="testimonials-block">
+					</div>
+					<div class="col-md-6">
+						<div class="testimonials">
 							<h2 class="headline-section">Testimonials</h2>
-							<figure class="testimonials-img">
-								<img src="images/src/testi_01.jpg" alt="" width="270" height="270">
-							</figure>
-							<div class="">
-								<p>Hi, guys! I want to thank you for my very very quick delivery and I just love my order… Your company efficient services and customer care are second to none! I am very happy! I will surely share my experience with my friends!</p>
-								<span>Dayle Peters</span>
+							<div class="testimonials-block">
+								<figure class="testimonials-img">
+									<img src="images/src/testi_01.jpg" alt="" width="167" height="167">
+								</figure>
+								<div class="testimonials-description">
+									<p class="testimonials-text">Hi, guys! I want to thank you for my very very quick delivery and I just love my order… Your company efficient services and customer care are second to none! I am very happy! I will surely share my experience with my friends!</p>
+									<span class="testimonials-name">Dayle Peters</span>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -303,12 +317,16 @@
     <footer class="site-footer">
 		<section class="subscribe-block">
 			<div class="container">
-				<div class="row">
-					<div class="col-md-12 subscribe d-flex align-items-center">
+				<div class="row subscribe">
+					<div class="col-md-1">
 						<span>
 							<i class="fas fa-paper-plane"></i>
 						</span>
+					</div>
+					<div class="col-md-7">
 						<span class="subscribe-text">Subscribe to our newsletter to receive news, updates, and another stuff by email:</span>
+					</div>
+					<div class="col-md-4">
 						<form action="#" method="post" class="subscribe-form">
 							<input type="email" name="email" placeholder="Your email address" class="subscribe-form__mail">
 							<a href="#" class="subscribe-btn">Subscribe</a>
@@ -318,14 +336,16 @@
 			</div>
 		</section>
 		<section class="container nav-block">
-			<div class="row">
-				<div class="col-md-12 d-flex footer-list">
+			<div class="row footer-list">	
+				<div class="col-md-3">
 					<div class="footer-item">
 						<a href="#">
 							<img src="images/src/logo.png" alt="Natural Foods" width="260" height="50">
 						</a>
 						<p class="widget-text">The variety of products available at our store at the moment is vast, but we still continue to widen our assortment. We monitor the relevant market niche on regular basis to keep our prices competitive. Buying form us you can be sure that you’ll get the product you have offered quickly and hassle-free. We value our reputation of the trustworthy merchant and never upset our clients.</p>
 					</div>
+				</div>
+				<div class="col-md-2">
 					<div class="footer-item">
 						<p class="widget-name">Information</p>
 						<ul>
@@ -349,6 +369,8 @@
 							</li>
 						</ul>
 					</div>
+				</div>
+				<div class="col-md-2">
 					<div class="footer-item">
 						<p class="widget-name">Categories</p>
 						<ul>
@@ -366,6 +388,8 @@
 							</li>
 						</ul>
 					</div>
+				</div>
+				<div class="col-md-2">
 					<div class="footer-item">
 						<p class="widget-name">My account</p>
 						<ul>
@@ -383,6 +407,8 @@
 							</li>
 						</ul>
 					</div>
+				</div>
+				<div class="col-md-3">
 					<div class="footer-item">
 						<p class="widget-name">Contact us</p>
 						<span class="phone-block">

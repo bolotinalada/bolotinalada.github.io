@@ -24,14 +24,14 @@ li
     text-align: center
     text-transform: uppercase
     font-size: 44px
-    &::before
-        content: ' '
-        position: absolute
-        bottom: 0
-        left: 470px
-        width: 180px
-        height: 1px
-        border-bottom: 1px solid #d7d7d7
+    // &::before
+    //     content: ' '
+    //     position: absolute
+    //     bottom: 0
+    //     left: 470px
+    //     width: 180px
+    //     height: 1px
+    //     border-bottom: 1px solid #d7d7d7
     .headline-green
         color: #66a55f
     .headline-grey
@@ -43,7 +43,6 @@ li
     position: relative
     display: inline-block
     width: 270px
-    margin-left: 20px
     margin-bottom: 20px
     font-size: 16px
     line-height: 20px
@@ -173,7 +172,7 @@ li
                 span
                     background-color: #66a558
 
-//Шапка//
+//Шапка ссылки//
 
 .site-header
     border-top: 6px solid #7ca877
@@ -187,12 +186,20 @@ li
         &:hover
             color: $accent
             text-decoration: none
+
+// Шапка контакты
+    
 .header-area-bottom
     padding-bottom: 20px
     border-bottom: 1px solid #dddddd
 
-.phone_block
-    padding-left: 9px
+.phone-block
+    display: flex
+.adress-block
+    display: flex
+.phone_text
+    display: flex
+    flex-direction: column
 .fa-phone-alt,
 .fa-map
     font-size: 18px
@@ -283,8 +290,8 @@ li
         left: 0
         right: auto
         z-index: 10
-
 .menu-nav
+    padding: 20px
     ul
         li
             &:hover
@@ -313,15 +320,19 @@ input[type="search"]
     padding: 10px 0px 10px 4px
     border: 1px solid #dddddd
 
+.subscribe-form
+    width: 462px
+
 .form-search
     position: relative
+    padding-top: 15px
     button
         background-color: transparent
         border: none
         width: 42px
         height: 43px
         position: absolute
-        top: 0
+        top: 10px
         right: 0
         cursor: pointer
 
@@ -334,7 +345,6 @@ input[type="search"]
 //Слайдер//
             
 .slider
-    position: relative
     padding: 0
     .slider-item
         background-size: cover
@@ -342,9 +352,6 @@ input[type="search"]
         position: relative
         min-height: 700px
         .slider-text
-            position: absolute
-            top: 250px
-            left: 60px
             color: #ffffff
             text-align: center
             .slider-headline
@@ -352,6 +359,7 @@ input[type="search"]
                 font-size: 118px
                 font-weight: 400
                 line-height: 120px
+                padding-top: 160px
             .slider-description
                 font-size: 17px
                 font-weight: 300
@@ -373,7 +381,6 @@ input[type="search"]
     display: flex
     justify-content: space-between
     &-item
-        width: 33.333%
         text-align: center
         padding: 15px
         align-items: flex-start
@@ -436,10 +443,8 @@ input[type="search"]
                 color: #ffffff
             .subscribe-text
                 color: #ffffff
-                padding-left: 32px
                 line-height: 24px
                 font-size: 22px
-                margin-right: 70px
 .subscribe-btn
     background-color: #f2d48b
     font-size: 16px
@@ -452,11 +457,12 @@ input[type="search"]
         color: #ffffff
         text-decoration: none
 .subscribe-form__mail
-    padding: 15px 0 15px 15px
+    padding: 13px 0 13px 15px
     background-color: #569450
     font-size: 16px
     letter-spacing: 0.4
     border: 0
+    margin-right: -3px
 
 //Навигация: footer//
 
@@ -464,7 +470,6 @@ input[type="search"]
     margin-top: 54px
 .footer-list
     .footer-item
-        width: 25.546%
         padding: 15px
         .widget-name
             color: #604848
@@ -482,7 +487,6 @@ input[type="search"]
             margin-bottom: 11px
         .map-block
             position: absolute
-            // background-image: url('../../images/src/map.png')
             background-repeat: no-repeat
             background-size: cover
             width: 200px
@@ -534,15 +538,13 @@ input[type="search"]
 
 .site-content
     margin: 30px 0
+.headline-section,
+.about-page_title
+    color: #604848
 .about-page_item
-    width: 33.445%
-    padding: 10px
     .headline-section
         &::before
             left: 90px
-    .headline-section,
-    .about-page_title
-        color: #604848
     .about-page_title,
     .about-page_year
         font-size: 20px
@@ -550,11 +552,11 @@ input[type="search"]
         line-height: 25px
         margin-top: 20px
         margin-bottom: 8px
-.mission-list
-    color: #66a55f
-    font-size: 16px
-    line-height: 14px
-    margin-bottom: 16px
+    .mission-list
+        color: #66a55f
+        font-size: 16px
+        line-height: 14px
+        margin-bottom: 16px
 
 .clearfix
     content: ""
@@ -599,7 +601,80 @@ input[type="search"]
 
 // 
 
-.advantages-block,
-.testimonials-block
-    display: inline-block
-    float: none
+
+.advantages,
+.testimonials
+    .headline-section
+        color: #54595f
+        &::before
+            left: 180px
+.advantages
+    .advantages-list
+        display: flex
+        flex-wrap: wrap
+        .advantages-item
+            float: left
+            width: 50%
+            text-align: center
+            padding: 10px
+            .fa-calculator,
+            .fa-thumbs-up,
+            .fa-star,
+            .fa-tag
+                color: #66a55f
+                font-size: 50px
+            .advantages-item_title
+                color: #604848
+                font-size: 24px
+                font-weight: 700
+                line-height: 26px
+                margin-bottom: 10px
+                margin-top: 15px
+.testimonials
+    .testimonials-block
+        display: flex
+        justify-content: space-between
+        .testimonials-img,
+        .testimonials-description
+            padding: 10px
+        .testimonials-description
+            .testimonials-text
+                font-weight: 400
+                font-size: 14px
+                line-height: 18px
+                margin-bottom: 20px
+            .testimonials-name
+                color: #604848
+                font-size: 20px
+                font-weight: 700
+                line-height: 25px
+
+// Фильтер
+
+.range-controls
+    position: relative
+    .scale
+        height: 5px
+        background-color: #7ca877
+        border-radius: 2px
+        .bar
+            width: 80%
+            height: 5px
+            background: #4b301f
+            border-radius: 2px
+    .range-toggle
+        position: absolute
+        top: -9px
+        width: 4px
+        height: 4px
+        background: #ababab
+        border: 8px solid #ffffff
+        border-radius: 50%
+        box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2)
+        cursor: pointer
+        &:hover
+            background: #1c4f80
+    .range-toggle-min
+        left: 0
+    .range-toggle-max
+        left: 80%
