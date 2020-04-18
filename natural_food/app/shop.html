@@ -64,7 +64,7 @@
 					<nav class="menu-nav">
 						<ul class="menu-list">
 							<li class="menu-item">
-								<a href="#">Home</a>
+								<a href="index.html">Home</a>
 							</li>
 							<li class="menu-item">
 								<a href="about.html">About is</a>
@@ -90,10 +90,10 @@
 								</ul>
 							</li>
 							<li class="menu-item">
-								<a href="#">Blog</a>
+								<a href="blog.html">Blog</a>
 							</li>
 							<li class="menu-item">
-								<a href="#">Contact</a>
+								<a href="contact.html">Contact</a>
 							</li>
 						</ul>
 					</nav>
@@ -107,7 +107,7 @@
 					</form>
 				</div>
 				</div>
-			</div>
+		</div>
 		</div>
 		<section class="breadcrumbs">
             <div class="container">
@@ -123,9 +123,9 @@
         <section class="shop-block">
 			<div class="container content">
 				<div class="row">
-					<div class="col-md-3">
-						<h3>Categories</h3>
-                        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+					<div class="col-md-3 filter">
+						<h3 class="headline-section">Categories</h3>
+                        <form class="filter-checkbox" method="get" action="#">
                             <ul>
                                 <li class="filter-option">
                                     <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="baxter-of-california" id="filter-baxter-of-california">
@@ -149,7 +149,7 @@
                                 </li>
                             </ul>
 						</form>
-						<h3>Price</h3>
+						<h3 class="headline-section">Price</h3>
                         <div class="filter-range">
                             <div class="range-controls">
                                 <div class="scale">
@@ -161,32 +161,76 @@
 						</div>
 						<div class="product-list">
 							<div class="product-item">
-								<img src="images/src/pop_product1.png" alt="" width="81" height="81">
-								<a href="#" class="product-item_title">De Cecco Angel Hair Nests</a>
-								<span class="product-item_price">£95</span>
+								<figure>
+									<img src="images/src/pop_product1.png" alt="" width="81" height="81">
+								</figure>
+								<div class="product-item_text">
+									<a href="#" class="product-item_title">De Cecco Angel Hair Nests</a>
+									<span class="product-item_price">£95</span>
+									<span class="product-rating_stars">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="far fa-star"></i>
+									</span>
+								</div>
 							</div>
 							<div class="product-item">
-								<img src="images/src/pop_product2.png" alt="" width="81" height="81">
-								<a href="#" class="product-item_title">Collezione Pasta Orecchiette</a>
-								<span class="product-item_price">£70<span>£75</span></span>
+								<figure>
+									<img src="images/src/pop_product2.png" alt="" width="81" height="81">
+								</figure>
+								<div class="product-item_text">
+									<a href="#" class="product-item_title">Collezione Pasta Orecchiette</a>
+									<span class="product-item_price">£70<span class="price-discount">£75</span></span>
+									<span class="product-rating_stars">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="far fa-star"></i>
+									</span>
+								</div>
 							</div>
 							<div class="product-item">
-								<img src="images/src/pop_product3.png" alt="" width="81" height="81">
-								<a href="#" class="product-item_title">Dr. Jay’s Ayurfoods Lentil Khichadi</a>
-								<span class="product-item_price">£100</span>
+								<figure>
+									<img src="images/src/pop_product3.png" alt="" width="81" height="81">
+								</figure>
+								<div class="product-item_text">
+									<a href="#" class="product-item_title">Dr. Jay’s Ayurfoods Lentil Khichadi</a>
+									<span class="product-item_price">£100</span>
+									<span class="product-rating_stars">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="far fa-star"></i>
+									</span>
+								</div>
 							</div>
 							<div class="product-item">
-								<img src="images/src/pop_product4.png" alt="" width="81" height="81">
-								<a href="#" class="product-item_title">Ferara Pasta Long Fusilli</a>
-								<span class="product-item_price">£120</span>
+								<figure>
+									<img src="images/src/pop_product4.png" alt="" width="81" height="81">
+								</figure>
+								<div class="product-item_text">
+									<a href="#" class="product-item_title">Ferara Pasta Long Fusilli</a>
+									<span class="product-item_price">£120</span>
+									<span class="product-rating_stars">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="far fa-star"></i>
+									</span>
+								</div>
 							</div>
 						</div>
 				 	</div>
 					<div class="col-md-9 productsx">
 						<div class="row">
 						 	<div class="col-md-4">
-								<form action="#" method="post">
-									<select name="sotnig" class="orderby">
+								<form action="#" method="post" class="form-sorting">
+									<select name="sorting" class="orderby">
 										<option value="Default sorting">Default sorting</option>
 										<option value="Sort by popularity">Sort by popularity</option>
 										<option value="Sort by average rating">Sort by average rating</option>
