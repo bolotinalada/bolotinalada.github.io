@@ -15,11 +15,13 @@ img
     height: auto
     max-width: 100%
 
+
 //Общие стили для цены
 
 .price-discount
-    text-decoration: line-through
-    font-size: 12px
+    &:focus
+        text-decoration: line-through
+        font-size: 12px
 
 //Общие стили для активной ссылки
 
@@ -544,7 +546,8 @@ img
 // Main
 
 .site-content
-    margin: 30px 0
+    margin-top: 30px
+    margin-bottom: 40px
 .headline-section,
 .about-page_title
     color: #604848
@@ -942,14 +945,21 @@ img
         &-phone-alt,
         &-file-alt,
         &-envelope
+            margin-top: 5px
+            width: 15px
             color: #604848
             font-size: 12px
             font-weight: 900
             margin-right: 8px
+    .contact-link
+        &:hover
+            text-decoration: none
+            color: #7ca877
     .contact-item_text
         font-weight: 700
         line-height: 18px
         color: #898989
+        margin-bottom: 0
 
 .form-contacts
     input[type="text"],
@@ -958,7 +968,21 @@ img
         font-size: 16px
         line-height: 23px
         color: #898989
-        padding: 8px 12px
+        padding: 8px 28.5px
         border: 1px solid #ebeced
     textarea
         width: 100%
+        margin-bottom: 10px
+    .btn-send
+        input[type="submit"]
+            font-size: 16px
+            line-height: 24px
+            font-weight: 700
+            background-color: #acd373
+            color: #ffffff
+            padding: 12px 36px 12px 36px
+            border-radius: 2px
+            border: none
+            text-transform: uppercase
+            &:hover
+                background-color: #7ca877
