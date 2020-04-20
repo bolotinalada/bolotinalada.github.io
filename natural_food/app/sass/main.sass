@@ -11,6 +11,10 @@ li
     padding: 0
     margin: 0
 
+img
+    height: auto
+    max-width: 100%
+
 //Общие стили для цены
 
 .price-discount
@@ -317,11 +321,7 @@ li
             border-bottom: 1 px solid #f0f0f0
             &:hover
                 color: #604848
-        
-input[type="search"]
-    width: 360px
-    padding: 10px 0px 10px 4px
-    border: 1px solid #dddddd
+
 
 .subscribe-form
     width: 462px
@@ -329,6 +329,10 @@ input[type="search"]
 .form-search
     position: relative
     padding-top: 15px
+    input[type="search"]
+        width: 360px
+        padding: 10px 0px 10px 4px
+        border: 1px solid #dddddd
     button
         background-color: transparent
         border: none
@@ -773,3 +777,188 @@ input[type="search"]
                 color: #7ca877
                 font-size: 10px
         
+// Посты
+
+.site-main
+    margin: 30px 0
+
+.posts-list
+    .post
+        margin-top: 50px
+        padding-top: 40px
+        border-top: 1px solid #ebeced
+
+.entry-header
+    .entry-title
+        margin-bottom: 18px
+        font-size: 28px
+        line-height: 1.4
+        color: #604848
+        font-weight: 400
+        a
+            &:hover
+                color: #604848
+                text-decoration: none
+    .entry-meta
+        margin-bottom: 28px
+        span
+            padding: 0 8px
+        a
+            &:hover
+                color: #66a55f
+                text-decoration: none
+
+.post-thumbnail
+    margin-bottom: 26px
+
+.entry-content
+    margin-bottom: 18px
+    font-size: 18px
+
+.entry-footer
+    .tags-link
+        a
+            &:hover
+                color: #66a55f
+                text-decoration: none
+    .btn-post
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-top: 28px
+        .comments-btn
+            color: #a1a2a4
+            padding: 10px 12px
+            font-size: 11px
+            line-height: 1.2
+            background-color: #f1f4f6
+            border-radius: 4px
+            &:hover
+                background-color: #8fb15d
+                color: #ffffff
+                text-decoration: none
+            .fa-comment
+                margin-right: 6px
+                font-size: 14px
+        .more-btn
+            background-color: #8fb15d
+            color: #ffffff
+            letter-spacing: 1px
+            line-height: 1
+            font-size: 11px
+            font-weight: 900
+            padding: 12px 20px
+            text-transform: uppercase
+            border-radius: 4px
+            &:hover
+                background-color: #b5d783
+                color: #ffffff
+                text-decoration: none
+
+
+
+
+.search-form__field[type="search"]
+    width: 323px
+    padding: 8px 12px
+    border: 1px solid #ebeced
+    background-color: #ffffff
+    border-radius: 4px
+
+.search-btn
+    background-color: #8fb15d
+    color: #ffffff
+    letter-spacing: 1px
+    font-size: 13px
+    font-weight: 900
+    border-radius: 4px
+    border: none
+    padding: 8px 11px
+    margin-left: 10px
+
+.widget-title
+    font-size: 20px
+    text-transform: uppercase
+    margin-bottom: 25px
+    line-height: 1.5
+    color: #604848
+    font-weight: 400
+
+.recent_entries-item
+    margin-bottom: 20px
+    a
+        &:hover
+            text-decoration: none
+            color: #604848
+
+.recentcomments
+    display: flex
+    flex-direction: column
+    color: #a1a2a4
+    margin-bottom: 20px
+    .comment-author-link
+        a
+            color: #a1a2a4
+            &:hover
+                color: #604848
+    a
+        &:hover
+            text-decoration: none
+            color: #604848
+
+.archives-item,
+.categories-item
+    margin-bottom: 4px
+
+.archives-item,
+.categories-item,
+.meta-item
+    a
+        &:hover
+            color: #66a55f
+            text-decoration: none
+
+.widget
+    width: 100%
+    margin-top: 50px
+    padding-top: 40px
+    border-top: 1px solid #ebeced
+
+
+.contact-block
+    margin-top: 20px
+
+.contact-title
+    color: #604848
+    font-size: 26px
+    line-height: 28px
+    font-weight: 400
+
+.contact-item
+    display: flex
+    align-items: flex-start
+    .fa
+        &-map-marker-alt,
+        &-phone-alt,
+        &-file-alt,
+        &-envelope
+            color: #604848
+            font-size: 12px
+            font-weight: 900
+            margin-right: 8px
+    .contact-item_text
+        font-weight: 700
+        line-height: 18px
+        color: #898989
+
+.form-contacts
+    input[type="text"],
+    textarea
+        background-color: #f0f0f0
+        font-size: 16px
+        line-height: 23px
+        color: #898989
+        padding: 8px 12px
+        border: 1px solid #ebeced
+    textarea
+        width: 100%
