@@ -791,6 +791,60 @@ img
         padding-top: 40px
         border-top: 1px solid #ebeced
 
+.blog-post,
+.post-author,
+.post-navigation
+    margin-bottom: 50px
+    padding-bottom: 45px
+    border-bottom: 1px solid #ebeced
+
+.post-author
+    display: flex
+    align-items: center
+    .post-author_avatar
+        margin-right: 30px
+        img
+            border-radius: 50%
+    .post-author_title
+        text-transform: uppercase
+        font-weight: 400
+        font-size: 20px
+        color: #604848
+        a
+            &:hover
+                text-decoration: none
+                color: #66a55f
+
+.post-navigation
+    .nav-previous
+        width: 50%
+        .nav-previous_link
+            position: relative
+            display: flex
+            flex-direction: column
+            padding-left: 35px
+            padding-right: 15px
+            &:hover
+                text-decoration: none
+                color: #66a55f
+            .fa-chevron-left
+                position: absolute
+                left: 0
+                top: 35px
+                color: #a1a2a4
+                &:hover
+                    color: #66a55f
+            .nav-text
+                font-weight: 600
+                margin-bottom: 10px
+                font-size: 11px
+                text-transform: uppercase
+            .post-title
+                font-size: 20px
+                line-height: 1.5
+                color: #604848
+
+
 .entry-header
     .entry-title
         margin-bottom: 18px
@@ -824,6 +878,17 @@ img
             &:hover
                 color: #66a55f
                 text-decoration: none
+    .tag-link
+        margin-left: 5px
+        margin-bottom: 5px
+        padding: 6px 10px
+        border-radius: 4px
+        border: 1px solid #ebeced
+        &:hover
+            color: #ffffff
+            background-color: #8fb15d
+            border-color: #8fb15d
+            text-decoration: none
     .btn-post
         display: flex
         justify-content: space-between
